@@ -58,7 +58,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>分類變更</title>
+	<title>@yield('title')</title>
 </head>
 <body class="stretched">
 	<!-- Document Wrapper
@@ -135,9 +135,7 @@
 		</header><!-- #header end -->
 
 		<section id="commodity">
-		{{Form::open(['action'=>'CgyController@store','role'=>'form','files'=>true])}}	
-			@include('includes.cgys._cgyform')
-		{{Form::close()}}
+			@yield('content')
 		</section>
 	</div><!-- #wrapper end
 
