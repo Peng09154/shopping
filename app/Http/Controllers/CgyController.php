@@ -33,7 +33,7 @@ class CgyController extends Controller
      */
     public function create()
     {
-        return view('includes.cgys.cgyCreate');
+        return view('includes.cgys.create');
 
     }
     
@@ -89,7 +89,7 @@ class CgyController extends Controller
     public function edit($id)
     {
         $cgy = Cgy::find($id);
-        return view('includes.cgys.cgyEdit', compact('cgy'));
+        return view('includes.cgys.edit', compact('cgy'));
     }
 
     /**
